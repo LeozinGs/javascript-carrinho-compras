@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./exercicio.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <h1 class="container__title">EXERCICIOS</h1>
+    </section>
+
+    <section class="container exercicio__1" id="exercicio-1">
+
+        <h2 class="exercicio">1- Crie um formulário simples com campos de entrada e utilize JavaScript para recuperar os valores digitados nos campos usando a propriedade value. Exiba os valores no console e na tela.</h2>
+
+        <p class="input__description">Nome:</p>
+        <input type="text" class="input" id="nome" placeholder="Digite seu nome">
+
+        <p class="input__description">Idade:</p>
+        <input type="number" class="input" id="idade" placeholder="Digite sua idade">
+
+        <button class="btn__ativar" onclick="ativarBotao()">Confirmar</button>
+
+        <p class="hello__text"></p>
+
+    </section>
+
+    <section class="container exercicio__2" id="exercicio-2">
+
+        <h2 class="exercicio">2- Tenha um elemento HTML na página (por exemplo, um parágrafo) e utilize JavaScript para modificar seu conteúdo usando a propriedade textContent.</h2>
+
+        <p class="text__to__modify">Olá!, escreva algo na caixa e clique no botão para me modificar.</p>
+
+        <input type="text" class="text__input" placeholder="Escreva uma frase aqui." id="text">
+
+        <button class="btn__modificar" onclick="modificarTexto()">Modificar</button>
+        <button class="btn__resetar" onclick="resetar()">Resetar</button>
+
+    </section>
+
+    <section class="container exercicio__3" id="exercicio-3">
+
+        <h2 class="exercicio">3- Faça a soma de duas variáveis numéricas e apresente no console com uma mensagem amigável em Template String.</h2>
+
+        <p class="input__description">Digite 2 numeros a serem somados:</p>
+
+        <input type="number" class="input__number1" placeholder="Digite aqui o 1º número">
+        <input type="number" class="input__number2" placeholder="Digite aqui o 2º número">
+        <button class="sum__number" onclick="somarNumeros()">Somar</button>
+        <button class="reset__number" onclick="resetarNumeros()">Resetar</button>
+        
+        <p class="text__sum">A soma dos valores:</p>
+
+    </section>
+
+    <section class="container exercicio__4" id="exercicio-4">
+
+        <h2 class="exercicio">4- Receba, no mínimo, duas sentenças como uma string e utilize split() para quebrá-la em frases menores com base em um ponto e vírgula como delimitador.</h2>
+
+        <p class="input__description">Digite duas sentenças espaçadas por ";"</p>
+
+        <input type="text" class="sentence__input" placeholder="Escreva aqui duas sentenças">
+
+        <button class="split__sentences" onclick="separarFrases()">Separar Sentenças</button>
+
+        <p class="rip__sentences1"></p>
+        <p class="rip__sentences2"></p>
+
+    </section>
+
+    <section class="container exercicio__5" id="exercicio-5">
+
+        <h2 class="exercicio">Receba uma string contendo números separados por vírgulas. Utilize split() para separar os números e exibi-los no console.</h2>
+
+        <p class="input__description">Escreva 2 números separados por ","</p>
+
+        <input type="text" class="number__input" placeholder="Escreva os 2 números aqui">
+
+        <button class="split__numbers" onclick="separarNumeros()">Separar Números</button>
+
+        <p class="rip__number1"></p>
+        <p class="rip__number2"></p>
+
+    </section>
+
+    <script src="./js/exercicios.js"></script>
+</body>
+</html>
